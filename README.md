@@ -1,4 +1,4 @@
-# HTML + CSS 기본력을 다지고 학습을 기록하는데 목적을 둔 Repo 입니다.
+# HTML + CSS 기본력 다지는데 목적을 둔 Repo 입니다.
 - [`Frontend Mentor`](https://www.frontendmentor.io/) 예제를 활용합니다.
 - 웹 표준과 접근성을 고려하여 UI 제작을 연습합니다.
 - 퍼블리싱 스킬을 숙달하는데 목적을 둡니다.
