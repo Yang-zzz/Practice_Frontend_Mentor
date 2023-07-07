@@ -91,7 +91,7 @@ body {
 }
 
 .summary-wrapp button {
-    border-radius: 10%;
+    border-radius: 10px;
     border-style: none;
     height: 50px;
     background-color:midnightblue
