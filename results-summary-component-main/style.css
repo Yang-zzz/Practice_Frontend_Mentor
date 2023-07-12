@@ -87,12 +87,59 @@ body {
 
 .summary-list {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
   border: 1px solid red;
 }
 
+.summary-list-text {
+  margin-left: 30px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.summary-fountain-wrapp {
+  border: 1px solid #000;
+  margin-right: 5px;
+}
+.summary-list-text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: no-repeat center left / contain;
+  left: -20px;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+}
+.summary-list:nth-child(1) .summary-list-text::before {
+  background-image: url(./assets/images/icon-reaction.svg);
+}
+
+.summary-list:nth-child(2) .summary-list-text::before {
+  background-image: url(./assets/images/icon-memory.svg);
+}
+
+.summary-list:nth-child(3) .summary-list-text::before {
+  background-image: url(./assets/images/icon-verbal.svg);
+}
+
+.summary-list:nth-child(4) .summary-list-text::before {
+  background-image: url(./assets/images/icon-visual.svg);
+}
+
+.summary-list-son {
+}
+.summary-list-parents {
+}
 .summary-wrapp button {
-    border-radius: 10px;
-    border-style: none;
-    height: 50px;
-    background-color:midnightblue
+  font-weight: 700;
+  border-radius: 30px;
+  border-style: none;
+  height: 50px;
+  color: #fff;
+  background-color: midnightblue;
 }
