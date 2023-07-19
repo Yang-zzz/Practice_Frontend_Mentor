@@ -9,7 +9,7 @@
 ---
 | 날짜         | 코드링크                                                                                                                                    | 결과물                                                                                                                                                                       | 작업시간   |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-|  23.07.07| [result-summary-componemt](링크)| <img width="250" alt="" src=""> | --         |
+|  23.07.07| [result-summary-componemt](https://github.com/Yang-zzz/Practice_Frontend_Mentor/tree/main/results-summary-component-main)| <img width="200" alt="image" src="https://github.com/Yang-zzz/Practice_Frontend_Mentor/assets/89332492/c4f3e024-5cef-4703-a73a-ab1a07300d82"> | 3 hour        |
 |  23.07.  | [result-summary-componemt](링크)| <img width="250" alt="" src=""> | --         |
 |  23.07.  | [result-summary-componemt](링크)| <img width="250" alt="" src=""> | --         |
 |  23.07.  | [result-summary-componemt](링크)| <img width="250" alt="" src=""> | --         |
