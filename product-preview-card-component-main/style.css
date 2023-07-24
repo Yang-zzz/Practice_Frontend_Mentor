@@ -1,20 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
 
-/* font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif; */
 body {
   margin: 0;
   padding: 0;
   background-color: antiquewhite;
 }
-
 .main-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 400px;
+  width: 580px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -26,36 +22,109 @@ body {
   margin: 0;
   overflow: hidden;
   border-radius: 10px;
-  gap: 20px;
-  /* box-sizing: border-box; */
 }
 .product-container img {
-  width: 250px;
-  height: 400px;
+  width: 280px;
+  height: 100%;
+  /* height ..찜찜 */
   object-fit: cover;
 }
 .product-information {
-  width: 250px;
-  padding: 15px;
+  margin: 10px;
+  padding: 25px 30px 25px 30px;
 }
 
-.product-information span {
+.product-category {
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-size: 12px;
+  color: darkgrey;
 }
 
 .product-information h2 {
   font-family: "Fraunces", serif;
+  font-size: 30px;
+  margin: 15px 0;
 }
 
 .product-information p {
-  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
 }
 
 .product-price {
+  font-family: "Fraunces", serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
 }
+
 .lowerPrice {
-  font-size: 20px;
+  font-size: 30px;
+  color: rgb(70, 127, 129);
 }
+
 .listPrice {
-  font-size: 8px;
+  font-size: 10px;
+  text-decoration: line-through;
+  margin-left: 15px;
+  color: darkgrey;
+}
+
+.cart-btn {
+  color: #fff;
+  background-color: rgb(70, 127, 129);
+  border-style: none;
+  border-radius: 10px;
+  width: 220px;
+  height: 50px;
+}
+.cart-btn:hover {
+  background-color: rgb(3, 38, 17);
+  cursor: pointer;
+}
+
+.cart-btn span {
+  position: relative;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 22px;
+}
+
+.cart-btn span::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url(./images/icon-cart.svg) no-repeat;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 360px;
+  }
+  .product-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .product-container img {
+    object-fit: cover;
+  }
+  .product-information {
+    margin: 10px;
+    padding: 15px 20px 15px 20px;
+  }
+  .cart-btn {
+    width: 100%;
+  }
 }

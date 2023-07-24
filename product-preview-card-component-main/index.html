@@ -17,9 +17,12 @@
     <article class="main-container">
       <h1 class="">향수광고</h1>
       <figure class="product-container">
-        <img src="./images/image-product-desktop.jpg" alt="CHANEL_PERPUME" />
+        <picture>
+          <source srcset="./images/image-product-mobile.jpg" media="(max-width:768px)" />
+          <img src="./images/image-product-desktop.jpg" alt="CHANEL_PERPUME" />
+        </picture>
         <figcaption class="product-information">
-          <span>PERPUME</span>
+          <span class="product-category">PERPUME</span>
           <h2>Gabrielle Essence Eau De Parfum</h2>
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
@@ -29,7 +32,7 @@
             <span class="lowerPrice">$149.99</span>
             <span class="listPrice">$169.99</span>
           </div>
-          <button class="Ca">
+          <button class="cart-btn">
             <span>Add to Cart</span>
           </button>
         </figcaption>
