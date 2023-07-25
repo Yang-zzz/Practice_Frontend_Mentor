@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap");
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+.preview-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.preview-container h1 {
+  display: none;
+}
+
+.product-img {
+  width: 250px;
+  height: 260px;
+  border-radius: 15px;
+}
+
+.purchase-guide {
+  margin-bottom: 20px;
+}
+
+.product-detail {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.product-name {
+}
+.product-detail p {
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+}
+
+.purchase-guide {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+    color: hsl(178, 100%, 50%);
+}
+.period {
+    color: hsl(215, 51%, 70%);
+}
+
+.seller-container {
+}
