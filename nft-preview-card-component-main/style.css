@@ -5,6 +5,7 @@ body {
   font-family: "Outfit", sans-serif;
 }
 .preview-container {
+  width: 250px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,38 +20,120 @@ body {
   display: none;
 }
 
-.product-img {
-  width: 250px;
-  height: 260px;
-  border-radius: 15px;
-}
-
-.purchase-guide {
-  margin-bottom: 20px;
-}
-
 .product-detail {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #fff;
+  margin: 10px 0;
+  border-bottom: 1px solid rgba(209, 204, 204, 0.191);
 }
-.product-name {
-}
+
 .product-detail p {
   font-size: 14px;
   color: hsl(215, 51%, 70%);
 }
+.product-img-rayout {
+  position: relative;
+  width: 250px;
+  height: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.product-img-rayout:hover {
+  background-color: hsl(178, 100%, 50%);
+}
+.product-img {
+  position: relative;
+  width: 250px;
+  height: 260px;
+  border-radius: 15px;
+}
+.product-img-hoverEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 250px;
+  height: 260px;
+  border-radius: 15px;
+  opacity: 0;
+}
+.product-img-hoverEffect:hover {
+  background-color: hsla(178, 100%, 50%, 0.236);
+  opacity: 1;
+}
+.product-img-hoverEffect::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(./images/icon-view.svg)no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.product-name:hover {
+  color: hsl(178, 100%, 50%);
+}
 
 .purchase-guide {
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
-}
-.price {
-    color: hsl(178, 100%, 50%);
+  margin-bottom: 15px;
 }
 .period {
-    color: hsl(215, 51%, 70%);
+  position: relative;
+  color: hsl(215, 51%, 70%);
+}
+.price {
+  position: relative;
+  margin-left: 10px;
+  color: hsl(178, 100%, 50%);
+}
+.price::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  left: -14px;
+  background: url(./images/icon-ethereum.svg) no-repeat;
+  background-size: contain;
 }
 
-.seller-container {
+.period::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  right: 65px;
+  background: url(./images/icon-clock.svg) no-repeat;
+  background-size: contain;
+}
+
+.creation {
+  font-size: 13px;
+  color: hsl(215, 51%, 70%);
+  position: relative;
+  margin-left: 35px;
+}
+.creation::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: url(./images/image-avatar.png) no-repeat;
+  background-size: contain;
+  left: -35px;
+}
+.creator-name {
+  color: #fff;
+  text-decoration: none;
+}
+
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
 }
