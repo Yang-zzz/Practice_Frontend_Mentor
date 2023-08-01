@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap");
+:root {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.layout-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.main-container {
+  border: 1px solid #000;
+  width: 50vw;
+  padding: 30px;
+}
+.main-logo {
+  margin-bottom: 100px;
+}
+.main-logo img {
+}
+.notice-container {
+}
+.notice-title {
+  display: flex;
+  flex-direction: column;
+}
+.notice-title strong {
+  display: block;
+}
+.notice-desc {
+}
+.adreess-submit {
+}
+.adreess-submit input {
+}
+.adreess-submit button {
+}
+.cover-photo {
+  width: 50vw;
+  object-fit: cover;
+}
