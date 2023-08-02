@@ -7,39 +7,71 @@ body {
   margin: 0;
   padding: 0;
 }
+p {
+  margin: 0;
+}
 .layout-box {
   width: 100vw;
   height: 100vh;
   display: flex;
+  background-image: url(./images/bg-pattern-desktop.svg);
 }
 .main-container {
-  border: 1px solid #000;
-  width: 50vw;
-  padding: 30px;
+  width: 60vw;
+  padding: 60px 180px;
+  box-sizing: border-box;
+}
+
+.cover-photo {
+  width: 40vw;
+  object-fit: cover;
 }
 .main-logo {
   margin-bottom: 100px;
 }
 .main-logo img {
+  object-fit: cover;
 }
 .notice-container {
+  max-width: 350px;
+  margin-bottom: 30px;
 }
 .notice-title {
-  display: flex;
-  flex-direction: column;
+  font-size: 40px;
+  letter-spacing: 15px;
+  line-height: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
+
 .notice-title strong {
-  display: block;
+  font-weight: 600;
 }
+
 .notice-desc {
+  font-size: 13px;
+  line-height: 1.5rem;
+  margin-bottom: 26px;
 }
-.adreess-submit {
+.address-submit {
+  outline: 1px solid #000;
+  border-radius: 20px;
+  display: flex;
 }
-.adreess-submit input {
+.address-submit input {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  flex-grow: 1;
 }
-.adreess-submit button {
+.address-submit button {
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 15px 25px;
 }
-.cover-photo {
-  width: 50vw;
+.address-submit button img {
+  width: 12px;
+  height: 12px;
   object-fit: cover;
 }
